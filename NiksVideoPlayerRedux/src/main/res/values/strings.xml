@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VideoPlayerRedux</string>
+    <string name="loopOn">Looping On</string>
+    <string name="loopOff">Looping Off</string>
+    <string name="playPause">Play/Pause</string>
+    <string name="playNext">Play Next</string>
+</resources>

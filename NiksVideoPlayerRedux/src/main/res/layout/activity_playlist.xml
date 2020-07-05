@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:onClick="startPlayback"
+        android:text="Start"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView"
+        app:layout_constraintStart_toStartOf="@+id/scrollView"
+        app:layout_constraintTop_toTopOf="@+id/scrollView" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:onClick="addVideo"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStart"
+        app:layout_constraintStart_toStartOf="@+id/buttonStart"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <ToggleButton
+        android:id="@+id/loopToggle"
+        android:layout_width="123dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:textOff="@string/loopOn"
+        android:textOn="@string/loopOff"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAdd"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdd"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd" />
+
+    <ToggleButton
+        android:id="@+id/PlayPauseToggle"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:textOff="@string/playPause"
+        android:textOn="@string/playNext"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAdd"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdd"
+        app:layout_constraintTop_toBottomOf="@+id/loopToggle" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="409dp"
+        android:layout_height="678dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/verticalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
